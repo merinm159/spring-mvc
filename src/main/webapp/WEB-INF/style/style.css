@@ -1,0 +1,92 @@
+
+#head{
+  height: 40px;
+  padding-top: 5px;
+  padding-left: 10px;
+  background-color: #305496;
+}
+#col2{
+  float:right;
+  padding-top: 5px;
+  padding-right: 60px;
+  color: white;
+}
+
+#title{
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+table{
+  column-width: 200px;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+thead{
+  font-weight: bold;
+}
+#name{
+  text-align: left;
+  column-gap: 15%;
+  padding-right: 50px;
+}
+#price{
+  padding-left: 10px;
+  text-align: right;
+}
+#active{
+  padding-left: 10px;
+  text-align: center;
+}
+#dol{
+  padding-left: 10px;
+  text-align: center;
+}
+#category{
+  padding-left: 10px;
+  text-align: center;
+}
+#del{
+  padding-left: 10px;
+  text-align: center;
+}
+#acton{
+  padding-left: 10px;
+  text-align: center;
+}
+
+#body{
+  margin: 40px;
+  text-align: center;
+}
+#editbody{
+  margin: 40px;
+}
+.copyright{
+  background-color: #bfbfbf;
+  text-align: left;
+  height: 30px;
+  padding-top: 10px;
+  padding-left:5px;
+}
+
+
+
+#save{
+  background-color: #305496;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#total{
+  font-weight: bold;
+}
+#tprice{
+  font-weight: bold;
+}
