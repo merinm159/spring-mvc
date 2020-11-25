@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 import com.cognizant.truyum.model.Cart;
 import com.cognizant.truyum.model.MenuItem;
-@Component
+@Component("cartDao")
 public class CartDaoSqlImp implements CartDao {
 	private static PreparedStatement preparedStatement = null;
 

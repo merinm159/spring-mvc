@@ -33,9 +33,9 @@ public class MenuItemService {
 
 	}
 
-//	public void modifyMenuItem(MenuItem menuItem) {
-//		menuItemDao.modifyMenuItem(menuItem);
-//	}
+	public void modifyMenuItem(MenuItem menuItem) {
+		menuItemDao.modifyMenuItem(menuItem);
+	}
 
 	public MenuItem getMenuItem(long menuItemId) {
 		return menuItemDao.getMenuItem(menuItemId);
