@@ -16,7 +16,7 @@
          <div id="head">
            <div id="col1">
                <img src="images/truyum.png.png" height="33px" width="128px" >
-               <a href="menu-item-list-admin.html" id="col2">Menu</a>
+               <a href="menu-item-list-admin" id="col2">Menu</a>
              </div>
          </div>
        </header>
@@ -28,11 +28,10 @@
           <div id="adminedit">
 
           </div>
-          <form id="form" action="index.html" method="post">
+          <form id="form" action="edit-menu-item" method="POST">
 
             <label for="title">Name</label><br>
-            <input type="text" name="title" id="title" value="${menuItem.name}" minlength="2"
-				maxlength="65" size="80" required><br><br><br>
+            <input type="text" name="title" id="title" value="${menuItem.name}" size="80" required><br><br><br>
 
             <label for="p">Price(Rs.)</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
             <label for="act">Active</label>&emsp;&emsp;&emsp;&emsp;
@@ -53,7 +52,7 @@
 
             <input type="checkbox" id="delivery" name="delivery" value="${menuItem.freeDelivery}" <c:if test="${menuItem.freeDelivery}">checked</c:if>>
             <label for="delivery">Free Delivery</label><br><br>
-            <button type="button" id="submit" name="submit" onclick="save()">Save</button>
+           <input type="submit" value="Save">
           </form>
           <br><br><br>
 
