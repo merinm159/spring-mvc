@@ -25,30 +25,30 @@
 
 	<div id="body">
 		<div id="title">
-			<h2>Menu Items</h2>
+			<h2>Cart</h2>
 		</div>
-		<div>
-			<c:if test="${addCartStatus==true}">Item added to Cart Successfully</c:if>
-		</div>
+
 		<table>
 			<tr>
 				<th>Name</th>
 				<th>Free Delivery</th>
 				<th>Price</th>
-				<th>Category</th>
-				<th>Action</th>
 			</tr>
-			<c:forEach var="item" items="${menuItemListCustomer}">
+			<c:forEach var="product" items="${cart}">
 				<tr>
-					<td>${item.name}</td>
-					<td>${item.freeDelivery}</td>
-					<td>${item.price}</td>
-					<td>${item.category}</td>
-					<td><a href="/add-to-cart?menuItemId=${item.id}">Add to
-							Cart</a></td>
+					<td>${product.name}</td>
+					<td><c:choose>
+							<c:when test="${menuItem.freeDelivery}">Yes</c:when>
+							<c:otherwise>No</c:otherwise>
+						</c:choose></td>
+					<td>${product.price}</td>
+					<td><a href="/remove-cart-item?menuItemId=${product.id}">Delete</a></td>
 				</tr>
 
 			</c:forEach>
+			<tr>
+
+			</tr>
 
 		</table>
 	</div>

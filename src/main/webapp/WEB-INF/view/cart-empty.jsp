@@ -25,35 +25,17 @@
 
 	<div id="body">
 		<div id="title">
-			<h2>Menu Items</h2>
+			<h2>Cart</h2>
 		</div>
-		<div>
-			<c:if test="${addCartStatus==true}">Item added to Cart Successfully</c:if>
-		</div>
-		<table>
-			<tr>
-				<th>Name</th>
-				<th>Free Delivery</th>
-				<th>Price</th>
-				<th>Category</th>
-				<th>Action</th>
-			</tr>
-			<c:forEach var="item" items="${menuItemListCustomer}">
-				<tr>
-					<td>${item.name}</td>
-					<td>${item.freeDelivery}</td>
-					<td>${item.price}</td>
-					<td>${item.category}</td>
-					<td><a href="/add-to-cart?menuItemId=${item.id}">Add to
-							Cart</a></td>
-				</tr>
+	</div>
 
-			</c:forEach>
-
-		</table>
+	<div>
+		No items in cart. Use 'Add to Cart' option in <a
+			href="/show-menu-list-customer">Menu Item List</a>
 	</div>
 	<footer>
 		<div class="copyright">Copyright &copy; 2019</div>
 	</footer>
+
 </body>
 </html>
